@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LocationStatus"
+             x:Class="LocationStatus.WeatherStatus"
+             Title="Weather Status"
+             BackgroundColor="#034d6d">
+    <StackLayout
+        Orientation="Vertical"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <Label
+            x:Name="city_name"
+            HorizontalOptions="Center"
+            TextColor="White"
+            FontSize="27"
+            Margin="0, 0, 0, 40"
+            />
+        <Label
+            x:Name="condition_lbl"
+            Text="WeatherStatus"
+            HorizontalOptions="Center"
+            TextColor="White"
+            FontSize="38"
+            />
+        <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="Center">
+            <Label
+                x:Name="temperature_lbl"
+                Text="Temp            : "
+                TextColor="White"
+                FontSize="Small"
+            />
+            <Label
+                x:Name="wind_d_lbl"
+                Text="Wind Direct  : "
+                TextColor="White"
+                FontSize="Small"/>
+            <Label
+                x:Name="wind_type"
+                Text="Wind Type    : "
+                TextColor="White"
+                FontSize="Small"
+            />
+            <Label
+                x:Name="wind_speed"
+                Text="Wind Spd      : "
+                TextColor="White"
+                FontSize="Small"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

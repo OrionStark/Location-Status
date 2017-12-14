@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LocationStatus"
+             x:Class="LocationStatus.MainPage"
+             Title="Location Information">
+
+    <StackLayout Padding="10" BackgroundColor="#068dd1">
+        <Image
+            x:Name="img_icon"
+            WidthRequest="80"
+            HeightRequest="80"
+            Margin="0, 10, 0, 0"
+            HorizontalOptions="Center"/>
+        <Label
+            Text="Weather Information"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="Center"
+            FontSize="30"
+            FontAttributes="Bold"
+            TextColor="#ffffff"
+            />
+        <StackLayout Padding="10"
+                     HeightRequest="400"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand">
+            <Entry
+                Placeholder="City"
+                WidthRequest="230"
+                HeightRequest="50"
+                PlaceholderColor="DarkGray"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="White"
+                TextColor="#194b6d"
+                Margin="0, 100, 0, 0"
+                x:Name="City_Field"/>
+
+            <Button Text="Submit"
+                    WidthRequest="160"
+                    HeightRequest="60"
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    BackgroundColor="#0a3f5e"
+                    BorderColor="#ffffff"
+                    BorderRadius="10"
+                    x:Name="submit_btn"
+                    />
+            <Label Text="Your location navigator"
+                   FontSize="Small"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label Text="Condition"
+                   x:Name="condition"
+                   TextColor="#1a5f84"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="Medium"/>
+        </StackLayout>
+
+        <Label Text="OrionStark @ 2017"
+               HorizontalOptions="Center"
+               FontSize="Small"
+               TextColor="White"/>
+
+    </StackLayout>
+
+</ContentPage>
